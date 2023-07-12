@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ashichow-portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Montserrat&family=Poppins:wght@400;600;700&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(10, 44, 63);
+        color: white;
+        font-family: "poppins", sans-serif;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(56, 140, 186);
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: aliceblue;
+      }
+      nav ul li a:hover {
+        color: rgb(38, 6, 69);
+        font-size: 1.1rem;
+      }
+      main hr {
+        border: 0;
+        background-color: rgb(96, 171, 212);
+        height: 1.2px;
+        margin: 40px 84px;
+      }
+      .left {
+        font-size: 2rem;
+      }
+      .firstSection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 70px 0;
+      }
+
+      .firstSection > div {
+        width: 40%;
+      }
+      .leftSection {
+        font-size: 3rem;
+        margin-bottom: 50px;
+        margin-top: 25px;
+        margin-left: 20px;
+      }
+
+      .leftSection .buttons {
+        padding: 50px 0;
+      }
+      .leftSection .btn {
+        padding: 12px;
+        font-size: 20px;
+        cursor: pointer;
+      }
+      .rightSection img {
+        width: 100%;
+        margin-top: -5.5rem;
+        margin-left: -2rem;
+        object-fit: cover;
+      }
+      .purple {
+        color: rgb(96, 171, 212);
+      }
+
+      #element {
+        color: rgb(96, 171, 212);
+      }
+      .secondSection {
+        max-width: 80vw;
+        margin: auto;
+        height: 65vh;
+      }
+      .secondSection h1 {
+        font-size: 1.9rem;
+      }
+      .secondSection .box {
+        background-color: white;
+        width: 80vw;
+        height: 2px;
+        margin-top: 90px;
+        margin-bottom: 100px;
+        display: flex;
+      }
+      .secondSection .vertical-1,
+      .vertical-2,
+      .vertical-3,
+      .vertical-4 {
+        height: 93px;
+        width: 1px;
+        background-color: white;
+        margin-right: 140px;
+        /* padding-bottom: 25px; */
+      }
+      .secondSection .vertical-2,
+      .vertical-3,
+      .vertical-4 {
+        margin-left: 180px;
+      }
+      .second-break{
+        margin-top: 130px;
+      }
+      .image-top {
+        width: 70px;
+        position: relative;
+        top: -72px;
+        height: 70px;
+        border-radius: 10px;
+      }
+      .vertical-title {
+        position: relative;
+        top: 55px;
+        width: 170px;
+      }
+      .vertical-desc {
+        position: relative;
+        top: 66px;
+        color: rgb(200, 193, 193);
+        width: 260px;
+        font-size: 15px;
+      }
+      .contact-me h2 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 2.5rem;
+        font-weight: normal;
+        padding-bottom: 10px;
+      }
+
+      .contact-me h3 {
+        font-family: "Montserrat", sans-serif;
+      }
+      .contact-me p {
+        line-height: 4;
+      }
+      .thirdSection {
+        color: whitesmoke;
+        text-align: center;
+        font-family: "Merriweather", serif;
+        margin-bottom: 45px;
+        
+      }
+      .btn {
+        background: rgb(1, 52, 80);
+        border-radius: 13px;
+        text-shadow: 0px 0px 0px #666666;
+        -webkit-box-shadow: 4px 7px 4px #171217;
+        -moz-box-shadow: 4px 7px 4px #171217;
+        box-shadow: 4px 7px 4px #171217;
+        font-family: Courier New;
+        color: #ffffff;
+        font-size: 25px;
+        padding: 10px 20px 10px 20px;
+        text-decoration: none;
+      }
+      .btn:hover {
+        background: #384147;
+
+        background-image: -ms-linear-gradient(top, #384147, #3498db);
+        background-image: -o-linear-gradient(top, #384147, #3498db);
+        background-image: linear-gradient(to bottom, #384147, #3498db);
+
+        text-decoration: none;
+      }
+      .footer {
+        background-color: rgb(56, 140, 186);
+        height: 160px;
+        display: flex;
+        padding: 23px 122px;
+        justify-content: space-evenly;
+      }
+      .footer-first {
+        margin: 10px 0;
+        font-size: 14px;
+        font-weight: 400;
+      }
+      .footer-second {
+        margin: 10px 0;
+        font-size: 14px;
+        font-weight: 400;
+      }
+      .footer-third {
+        margin: 10px 0;
+        font-size: 14px;
+        font-weight: 400;
+      }
+      .footer ul {
+        list-style: none;
+        display: block;
+      }
+      .footer > div {
+        width: 223px;
+      }
+      .font-h6 {
+        opacity: 0.85;
+        margin: 0 0 10px;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+      .footer .footer-rights {
+        text-align: center;
+        color: rgb(10, 44, 63);
+      }
+      .footer-rights {
+        text-align: center;
+        padding: 10px 0;
+      }
+      @media screen and (max-width: 1500px) {
+        body {
+        }
+        .leftSection .buttons {
+        padding: -3px 0;
+      }
+        .secondSection .vertical-1,
+        .vertical-2,
+        .vertical-3,
+        .vertical-4 {
+          height: unset;
+          /* margin-bottom: 10vh; */
+          margin-top: 22vh;
+        }
+
+        .secondSection .vertical-2,
+        .vertical-3,
+        .vertical-4 {
+          margin-left: 0;
+        }
+        .vertical-title,
+        .vertical-desc {
+          left: 45px;
+          margin-top: -109px;
+          margin-bottom: 117px;
+        }
+        .secondSection .box {
+          flex-direction: column;
+          width: 50vw;
+          align-items: center;
+          margin-top: 36px;
+        }
+        .image-top{
+          margin-left: 45px;
+        }
+        .second-break{
+          margin-top: 346vh;
+        }
+        nav{
+          flex-direction: column;
+        }
+       
+        .firstSection {
+          flex-direction: column-reverse;
+        }
+        .leftSection{
+          width: 100% !important;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+  
+        .rightSection{
+          width: 500px !important;
+          display: flex;
+          justify-content: center;
+        }
+        .rightSection img{
+          width: 100vw;
+          
+        }
+        .secondSection{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        body{
+          min-width: fit-content;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">My Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          Hi,My name is <span class="purple">Ashish</span>
+          <div>and I am a passionate</div>
+          <span id="element"></span>
+          <div class="buttons">
+            <button class="btn">Download Resume</button>
+            <button class="btn">Visit Github</button>
+          </div>
+        </div>
+        <div class="rightSection">
+          <img src="images/img1.png" width="600px" height="500px" alt="" />
+        </div>
+      </section>
+      <hr />
+      <section class="secondSection">
+        <h1>Work Experience</h1>
+        <div class="box">
+          <div class="vertical">
+            <img src="images/html.png" alt="" class="image-top" />
+            <div class="vertical-title" style="margin-left: -1px">
+              <span id="element">HTML Developer</span> (2021-2022)
+            </div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+              impedit iure sed, fuga architecto ad? Non, officia! Repellendus et
+              necessitatibus, quasi distinctio quos dolor aliquid incidunt
+              delectus fugit esse corporis.
+            </div>
+          </div>
+          <div class="vertical" style="margin-left: 180px">
+            <img src="images/javascript.png" alt="" class="image-top" />
+            <div class="vertical-title" style="width: 180px">
+              <span id="element">JavaScript Developer</span> (2021-2022)
+            </div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+              impedit iure sed, fuga architecto ad? Non, officia! Repellendus et
+              necessitatibus, quasi distinctio quos dolor aliquid incidunt
+              delectus fugit esse corporis.
+            </div>
+          </div>
+          <div class="vertical" style="margin-left: 180px">
+            <img src="images/react.png" alt="" class="image-top" />
+            <div class="vertical-title">
+              <span id="element">React Js Developer</span> (2022-2023)
+            </div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+              impedit iure sed, fuga architecto ad? Non, officia! Repellendus et
+              necessitatibus, quasi distinctio quos dolor aliquid incidunt
+              delectus fugit esse corporis.
+            </div>
+          </div>
+          <div class="vertical" style="margin-left: 180px">
+            <img src="images/ui_ux.png" alt="" class="image-top" />
+            <div class="vertical-title">
+              <span id="element">UI/UX Designer</span> (2022-2023)
+            </div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+              impedit iure sed, fuga architecto ad? Non, officia! Repellendus et
+              necessitatibus, quasi distinctio quos dolor aliquid incidunt
+              delectus fugit esse corporis.
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <section class="thirdSection">
+        <div class="contact-me">
+          <h2>Get In Touch</h2>
+          <h3>Lorem ipsum dolor sit amet, non elit.</h3>
+          <p>
+            Lorem ipsum dolor sit amet, in quis, aenean amet. Phasellus sodales,
+            tellus donec dui, ornare erat.
+          </p>
+          <a class="btn" href="mailto:ashishchowdary676@email.com">CONTACT ME</a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="footer-first">
+          <h3>ashish's Developer Portfolio</h3>
+        </div>
+        <div class="footer-second">
+          <label for="footer-information" class="font-h6">Information</label>
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Business</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <div class="footer-third">
+          <label for="footer-legal" class="font-h6">Legal</label>
+          <ul>
+            <li>Terms and conditions</li>
+            <li>License agreement</li>
+            <li>Privacy policy</li>
+            <li>Copyright information</li>
+            <li>Cookies policy</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-rights">
+       Copyright &#169; ashishsportfolio.com | All rights reserved
+      </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web Developer", "Graphic Designer", "Web Designer"],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
